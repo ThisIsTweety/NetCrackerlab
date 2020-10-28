@@ -10,17 +10,19 @@ public class TvContract extends BaseContract {
         super(id, number, start, end, client);
         this.channels = channels;
         this.tariff = tariff;
+
     }
 
     public int getChannels() {
         if(tariff.equals("S"))
-            return 40;
+            channels = 40;
         if(tariff.equals("M"))
-            return 100;
+            channels = 100;
         if(tariff.equals("L"))
-            return 250;
+            channels = 250;
         else
-            return 0;
+            channels = 0;
+        return channels;
     }
 
     public String getTariff() {
