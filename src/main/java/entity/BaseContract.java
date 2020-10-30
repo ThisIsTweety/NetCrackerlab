@@ -4,11 +4,22 @@ import sun.util.resources.LocaleData;
 
 import java.time.LocalDate;
 import java.util.Calendar;
-
+/**
+ * Класс родитель контрактов со свойствами <b>id</b>, <b>number</b>, <b>start</b>, <b>end</b> и объектом класса "клиент" <b>client</b>.
+ */
 public class BaseContract {
     int id, number;
     LocalDate start, end;
     public Client client;
+
+    /**
+     * конструктор с параметрами:
+     * @param id
+     * @param number номер контаркта
+     * @param start начало контракта
+     * @param end окончани контракта
+     * @param client клиет
+     */
     public BaseContract(int id, int number, LocalDate start, LocalDate end, Client client) {
         this.id = id;
         this.start = start;
@@ -17,6 +28,9 @@ public class BaseContract {
         this.client = client;
     }
 
+    /**
+     * get и set параметров класса
+     */
     public int getNumber() {
         return number;
     }

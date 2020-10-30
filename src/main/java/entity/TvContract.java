@@ -2,17 +2,32 @@ package entity;
 
 import java.time.LocalDate;
 
+/**
+ * Наследник класса BaseContract.
+ */
 public class TvContract extends BaseContract {
     int channels;
     String tariff;
 
-    public TvContract(int id, int number, LocalDate start, LocalDate end, Client client, int channels, String tariff) {
+    /**
+     * Наследуемый конструктор с доп. параметрам "тариф"
+     * @param id
+     * @param number
+     * @param start
+     * @param end
+     * @param client
+     * @param tariff
+     */
+    public TvContract(int id, int number, LocalDate start, LocalDate end, Client client, String tariff) {
         super(id, number, start, end, client);
-        this.channels = channels;
         this.tariff = tariff;
 
     }
 
+    /**
+     * возвращает кол-во каналов в зависимотси от тарифа
+     * @return channels.
+     */
     public int getChannels() {
         if(tariff.equals("S"))
             channels = 40;
@@ -25,6 +40,9 @@ public class TvContract extends BaseContract {
         return channels;
     }
 
+    /**
+     * гетеры и сетеры
+     */
     public String getTariff() {
         return tariff;
     }
