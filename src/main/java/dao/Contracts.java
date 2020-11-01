@@ -34,7 +34,6 @@ public class Contracts {
             if (i == contracts.length - 1 ){
                 contracts[i] = contract;
                 expand();
-
                 return;
             }
             if(contracts[i] == null){
@@ -43,6 +42,9 @@ public class Contracts {
             }
 
         }
+    }
+    public BaseContract[] giveContracts(){
+        return contracts;
     }
 
     /**
@@ -62,7 +64,7 @@ public class Contracts {
         for(int i = 0; i<contracts.length;i++){
             if(contracts[i].getId() == id)
                 contracts[i] = null;
-
+                return;
         }
     }
 
