@@ -43,6 +43,11 @@ public class Contracts {
 
         }
     }
+
+    /**
+     * возвращает массик контрактов
+     * @return contracts
+     */
     public BaseContract[] giveContracts(){
         return contracts;
     }
@@ -50,7 +55,7 @@ public class Contracts {
     /**
      * Расширает массив контрактов в 2 раза, если он заполнится
      */
-    public  void expand() {
+    void expand() {
         BaseContract[] newArray = new BaseContract[contracts.length + contracts.length/2];
         System.arraycopy(contracts, 0, newArray, 0, contracts.length);
         contracts = newArray;
@@ -62,8 +67,11 @@ public class Contracts {
      */
     public void delete(int id){
         for(int i = 0; i<contracts.length;i++){
-            if(contracts[i].getId() == id)
+            if(contracts[i].getId() == id) {
                 contracts[i] = null;
+                for(int j = i+1;j<contracts.length;j++)
+                    contracts[j-1] = contracts[j];
+            }
                 return;
         }
     }

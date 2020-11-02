@@ -8,6 +8,7 @@ import java.time.LocalDate;
 
 /**
  *  Main класс, являющей точкой старта
+ * @author Демченко Даниил
  */
 public class Main {
     public static void main(String[] args) {
