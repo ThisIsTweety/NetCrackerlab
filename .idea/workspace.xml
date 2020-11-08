@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:netcracker" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="43f0eccd-32db-408d-9a02-c11341d45c8a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/BaseContractComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/Contracts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/Contracts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/Contracts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/Contracts.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\programs\IntelliJ IDEA 2020.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jKT1bXmEquVYYGhfVi4V0vPBJD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/dao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="dao" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\programs\Progs\netcracker lab\.idea" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.netcracker">
+    <configuration name="netcracker" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="netcracker lab" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContractsTest.addContract" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="netcracker lab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.ContractsTest" />
+      <option name="METHOD_NAME" value="addContract" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContractsTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="netcracker lab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.ContractsTest" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContractsTest.find" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="netcracker lab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.ContractsTest" />
+      <option name="METHOD_NAME" value="find" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ContractsTest.delete" />
+        <item itemvalue="JUnit.ContractsTest.find" />
+        <item itemvalue="JUnit.ContractsTest.addContract" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="43f0eccd-32db-408d-9a02-c11341d45c8a" name="Default Changelist" comment="" />
+      <created>1603551569476</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603551569476</updated>
+      <workItem from="1603551574958" duration="3591000" />
+      <workItem from="1603633679489" duration="2703000" />
+      <workItem from="1603806782673" duration="15930000" />
+      <workItem from="1604062164027" duration="8586000" />
+      <workItem from="1604159719205" duration="1000000" />
+      <workItem from="1604160776339" duration="8808000" />
+      <workItem from="1604328292350" duration="1102000" />
+      <workItem from="1604670793158" duration="16242000" />
+    </task>
+    <task id="LOCAL-00001" summary="add class">
+      <created>1603633544153</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603633544153</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add fields">
+      <created>1603635436611</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603635436612</updated>
+    </task>
+    <task id="LOCAL-00003" summary="entity implementation">
+      <created>1603810234481</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603810234481</updated>
+    </task>
+    <task id="LOCAL-00004" summary="create repos">
+      <created>1603927951610</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603927951610</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add javadoc">
+      <created>1604075605967</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604075605967</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add junit">
+      <created>1604241333217</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604241333217</updated>
+    </task>
+    <task id="LOCAL-00007" summary="merge branch">
+      <created>1604249255343</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604249255343</updated>
+    </task>
+    <task id="LOCAL-00008" summary="merge branch">
+      <created>1604249277503</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604249277503</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update">
+      <created>1604329256229</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604329256229</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add class" />
+    <MESSAGE value="add fields" />
+    <MESSAGE value="entity implementation" />
+    <MESSAGE value="create repos" />
+    <MESSAGE value="add javadoc" />
+    <MESSAGE value="add junit" />
+    <MESSAGE value="merge branch" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="747" y="275" key="#ContractsTest" timestamp="1604164960615">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="747" y="275" key="#ContractsTest/0.0.1920.1040@0.0.1920.1040" timestamp="1604164960615" />
+    <state x="783" y="266" width="816" height="774" key="#Intentions" timestamp="1604160475519">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="783" y="266" width="816" height="774" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1604160475519" />
+    <state x="471" y="177" key="#Project_Structure" timestamp="1604161187206">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="471" y="177" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1604161187206" />
+    <state x="522" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604164538799">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="522" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604164538799" />
+    <state x="721" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1604848367530">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="721" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604848367530" />
+    <state x="1530" y="311" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604067206783" />
+    <state x="797" y="289" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603905757243">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="797" y="289" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603905757243" />
+    <state x="679" y="502" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1604065550934">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="679" y="502" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1604065550934" />
+    <state x="726" y="110" key="CommitChangelistDialog2" timestamp="1604329254848">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="726" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604329254848" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604160666896">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604160666896" />
+    <state width="1074" height="195" key="GridCell.Tab.0.bottom" timestamp="1604857252325">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1074" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604857252325" />
+    <state width="1245" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604329407208" />
+    <state width="1074" height="195" key="GridCell.Tab.0.center" timestamp="1604857252325">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1074" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604857252325" />
+    <state width="1245" height="241" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604329407208" />
+    <state width="1074" height="195" key="GridCell.Tab.0.left" timestamp="1604857252325">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1074" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604857252325" />
+    <state width="1245" height="241" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604329407207" />
+    <state width="1074" height="195" key="GridCell.Tab.0.right" timestamp="1604857252325">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1074" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604857252325" />
+    <state width="1245" height="241" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604329407208" />
+    <state width="1245" height="274" key="GridCell.Tab.1.bottom" timestamp="1604249589308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1245" height="274" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604249589308" />
+    <state width="1245" height="274" key="GridCell.Tab.1.center" timestamp="1604249589308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1245" height="274" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604249589308" />
+    <state width="1245" height="274" key="GridCell.Tab.1.left" timestamp="1604249589308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1245" height="274" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604249589308" />
+    <state width="1245" height="274" key="GridCell.Tab.1.right" timestamp="1604249589308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1245" height="274" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604249589308" />
+    <state x="580" y="90" key="SettingsEditor" timestamp="1604069532016">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="580" y="90" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604069532016" />
+    <state x="659" y="396" key="chooseDestDirectoryDialog" timestamp="1604161329500">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="659" y="396" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604161329500" />
+    <state x="580" y="466" key="com.intellij.ide.util.TipDialog" timestamp="1604328297852">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="580" y="466" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604328297852" />
+    <state x="909" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603635457555">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="909" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603635457555" />
+    <state x="614" y="321" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1604161329519">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="614" y="321" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604161329519" />
+    <state x="1019" y="258" key="run.anything.popup" timestamp="1604075252972">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1019" y="258" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604075252972" />
+    <state x="731" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1604074423381">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="731" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604074423381" />
+  </component>
+</project>
