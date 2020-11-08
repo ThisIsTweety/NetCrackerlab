@@ -2,6 +2,8 @@ package dao;
 
 import entity.BaseContract;
 
+import java.util.function.Predicate;
+
 /**
  * класс репозиторий, хранящий все контракты.
  */
@@ -11,8 +13,20 @@ public class Contracts {
      * instance для реализации патерна singleton
      * Массив контрактов
      */
+
     private static Contracts instance;
     private  BaseContract[] contracts = new BaseContract[10];
+//    public BaseContract[] findAll(BaseContract contract) {
+//        BaseContract[] contr = new BaseContract[10];
+//        Predicate<Integer> numberChek = i -> contract.getNumber() == i;
+//        for (BaseContract b:contracts) {
+//            if(numberChek.test(b.getNumber())){
+//                contr
+//            }
+//        }
+//
+//
+//    }
 
     /**
      * Возвращает единственный объект
@@ -33,7 +47,7 @@ public class Contracts {
         for(int i = 0; i < contracts.length; i++) {
             if (i == contracts.length - 1 ){
                 contracts[i] = contract;
-                expand();
+                contracts = expand(contracts);
                 return;
             }
             if(contracts[i] == null){
@@ -55,10 +69,10 @@ public class Contracts {
     /**
      * Расширает массив контрактов в 2 раза, если он заполнится
      */
-    void expand() {
-        BaseContract[] newArray = new BaseContract[contracts.length + contracts.length/2];
-        System.arraycopy(contracts, 0, newArray, 0, contracts.length);
-        contracts = newArray;
+    BaseContract[] expand(BaseContract[] contr) {
+        BaseContract[] newArray = new BaseContract[contr.length + contr.length/2];
+        System.arraycopy(contr, 0, newArray, 0, contr.length);
+        return newArray;
     }
 
     /**
@@ -87,5 +101,20 @@ public class Contracts {
                 return contract;
         }
         return null;
+    }
+
+    /**
+     * пузырьковая сортировка, параметр зависит от компаратора.
+     */
+    public void bumbleSort(){
+        BaseContractComparator.CompId a = new BaseContractComparator.CompId();
+        for(int i=0;i<contracts.length;i++)
+            for(int j = 0; j<contracts.length-1-i;j++)
+                if(contracts[j+1] != null)
+                  if(a.compare(contracts[j],contracts[j+1])>0 ){
+                    BaseContract b = contracts[j];
+                    contracts[j] = contracts[j+1];
+                    contracts[j+1] = b;
+                }
     }
 }
