@@ -28,6 +28,17 @@ public class BaseContract {
         this.client = client;
     }
 
+    @Override
+    public String toString() {
+        return "BaseContract{" +
+                "id=" + id +
+                ", number=" + number +
+                ", start=" + start +
+                ", end=" + end +
+                ", client=" + client +
+                '}';
+    }
+
     /**
      * get и set параметров класса
      */

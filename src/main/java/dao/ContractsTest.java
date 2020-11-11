@@ -49,4 +49,17 @@ public class ContractsTest {
 
         Assert.assertEquals(expected,actual);
     }
+
+
+    @Test
+    public void bumbleSort() {
+    }
+
+    @Test
+    public void selectionSort() {
+    }
+
+    @Test
+    public void findPredicate() {
+    }
 }

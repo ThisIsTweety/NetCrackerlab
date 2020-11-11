@@ -2,6 +2,7 @@ package dao;
 
 import entity.BaseContract;
 
+import java.util.Arrays;
 import java.util.function.Predicate;
 
 /**
@@ -16,17 +17,8 @@ public class Contracts {
 
     private static Contracts instance;
     private  BaseContract[] contracts = new BaseContract[10];
-//    public BaseContract[] findAll(BaseContract contract) {
-//        BaseContract[] contr = new BaseContract[10];
-//        Predicate<Integer> numberChek = i -> contract.getNumber() == i;
-//        for (BaseContract b:contracts) {
-//            if(numberChek.test(b.getNumber())){
-//                contr
-//            }
-//        }
-//
-//
-//    }
+
+
 
     /**
      * Возвращает единственный объект
@@ -39,23 +31,28 @@ public class Contracts {
         return instance;
     }
 
+
+
     /**
      * Добавляет в массив новый контракт
      * @param contract входящий парметр контракт.
      */
-    public  void addContract(BaseContract contract){
-        for(int i = 0; i < contracts.length; i++) {
-            if (i == contracts.length - 1 ){
-                contracts[i] = contract;
-                contracts = expand(contracts);
+    void addContract(BaseContract contract, BaseContract[] otherContracts){
+        for(int i = 0; i < otherContracts.length; i++) {
+            if (i == otherContracts.length - 1 ){
+                otherContracts[i] = contract;
+                otherContracts = expand(otherContracts);
                 return;
             }
-            if(contracts[i] == null){
-                contracts[i] = contract;
+            if(otherContracts[i] == null){
+                otherContracts[i] = contract;
                 return;
             }
 
         }
+    }
+    public  void addContract(BaseContract contract){
+        addContract(contract,contracts);
     }
 
     /**
@@ -104,7 +101,7 @@ public class Contracts {
     }
 
     /**
-     * пузырьковая сортировка, параметр зависит от компаратора.
+     * пузырьковая сортировка, параметр сортировки зависит от компаратора.
      */
     public void bumbleSort(){
         BaseContractComparator.CompId a = new BaseContractComparator.CompId();
@@ -117,4 +114,41 @@ public class Contracts {
                     contracts[j+1] = b;
                 }
     }
+
+    /**
+     * сортировка выбором, параметр сортировки зависит от компаратора.
+     */
+    public void selectionSort(){
+        BaseContractComparator.CompNumber a = new BaseContractComparator.CompNumber();
+        for(int left = 0; left<contracts.length; left++){
+            int minInd = left;
+            for(int i = left; i < contracts.length;i++) {
+                if (a.compare(contracts[i], contracts[minInd]) < 0) {
+                    minInd = i;
+                }
+            }
+            BaseContract b = contracts[left];
+            contracts[left] = contracts[minInd];
+            contracts[minInd] = b;
+        }
+    }
+
+    /**
+     * поиск объектов по предикату
+     * @param predicate предикат
+     * @return списко объектов
+     */
+    public  BaseContract[] findPredicate(Predicate<BaseContract> predicate) {
+        BaseContract[] contr = new BaseContract[10];
+        for (BaseContract contract : contracts) {
+            if (contract != null) {
+                if (predicate.test(contract)) {
+                    addContract(contract, contr);
+                }
+            }
+        }
+        return contr;
+
+    }
+
 }
