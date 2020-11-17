@@ -123,7 +123,8 @@ public class Contracts {
         for(int left = 0; left<contracts.length; left++){
             int minInd = left;
             for(int i = left; i < contracts.length;i++) {
-                if (a.compare(contracts[i], contracts[minInd]) < 0) {
+                if(contracts[i] != null && contracts[minInd] != null)
+                 if (a.compare(contracts[i], contracts[minInd]) < 0) {
                     minInd = i;
                 }
             }
@@ -136,7 +137,7 @@ public class Contracts {
     /**
      * поиск объектов по предикату
      * @param predicate предикат
-     * @return списко объектов
+     * @return список объектов
      */
     public  BaseContract[] findPredicate(Predicate<BaseContract> predicate) {
         BaseContract[] contr = new BaseContract[10];
@@ -150,5 +151,7 @@ public class Contracts {
         return contr;
 
     }
+
+
 
 }
