@@ -137,35 +137,6 @@ public class Contracts {
 
     }
 
-    /*public void readCSV(BufferedReader reader){
-        String line = null, type;
-        Scanner scanner = null;
-        int index = 0;
-        while ((line = reader.readLine()) != null) {
 
-        }
-
-        while ((line = reader.readLine()) != null) {
-            BaseContra = new Employee();
-            scanner = new Scanner(line);
-            scanner.useDelimiter(",");
-            while (scanner.hasNext()) {
-                String data = scanner.next();
-                if (index == 0)
-                    emp.setId(Integer.parseInt(data));
-                else if (index == 1)
-                    emp.setName(data);
-                else if (index == 2)
-                    emp.setRole(data);
-                else if (index == 3)
-                    emp.setSalary(data);
-                else
-                    System.out.println("Некорректные данные::" + data);
-                index++;
-            }
-            index = 0;
-            empList.add(emp);
-        }
-    }*/
 
 }
