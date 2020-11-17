@@ -27,6 +27,7 @@ public class BaseContract {
         this.number = number;
         this.client = client;
     }
+    public BaseContract(){}
 
     @Override
     public String toString() {

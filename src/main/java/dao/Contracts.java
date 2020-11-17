@@ -1,8 +1,11 @@
 package dao;
 
 import entity.BaseContract;
+import util.BumbleSort;
+import util.ISorter;
+import util.SelectionSort;
 
-import java.util.Arrays;
+import java.util.Comparator;
 import java.util.function.Predicate;
 
 /**
@@ -17,7 +20,7 @@ public class Contracts {
 
     private static Contracts instance;
     private  BaseContract[] contracts = new BaseContract[10];
-
+    ISorter sorter;
 
 
     /**
@@ -56,7 +59,7 @@ public class Contracts {
     }
 
     /**
-     * возвращает массик контрактов
+     * возвращает массив контрактов
      * @return contracts
      */
     public BaseContract[] giveContracts(){
@@ -64,7 +67,7 @@ public class Contracts {
     }
 
     /**
-     * Расширает массив контрактов в 2 раза, если он заполнится
+     * Расширает массив контрактов в половину его размера, если он заполнится
      */
     BaseContract[] expand(BaseContract[] contr) {
         BaseContract[] newArray = new BaseContract[contr.length + contr.length/2];
@@ -103,35 +106,17 @@ public class Contracts {
     /**
      * пузырьковая сортировка, параметр сортировки зависит от компаратора.
      */
-    public void bumbleSort(){
-        BaseContractComparator.CompId a = new BaseContractComparator.CompId();
-        for(int i=0;i<contracts.length;i++)
-            for(int j = 0; j<contracts.length-1-i;j++)
-                if(contracts[j+1] != null)
-                  if(a.compare(contracts[j],contracts[j+1])>0 ){
-                    BaseContract b = contracts[j];
-                    contracts[j] = contracts[j+1];
-                    contracts[j+1] = b;
-                }
+    public void bumbleSort(Comparator a){
+        sorter = new BumbleSort();
+        sorter.sort(contracts,a);
     }
 
     /**
      * сортировка выбором, параметр сортировки зависит от компаратора.
      */
-    public void selectionSort(){
-        BaseContractComparator.CompNumber a = new BaseContractComparator.CompNumber();
-        for(int left = 0; left<contracts.length; left++){
-            int minInd = left;
-            for(int i = left; i < contracts.length;i++) {
-                if(contracts[i] != null && contracts[minInd] != null)
-                 if (a.compare(contracts[i], contracts[minInd]) < 0) {
-                    minInd = i;
-                }
-            }
-            BaseContract b = contracts[left];
-            contracts[left] = contracts[minInd];
-            contracts[minInd] = b;
-        }
+    public void selectionSort(Comparator a){
+        sorter = new SelectionSort();
+        sorter.sort(contracts,a);
     }
 
     /**
@@ -152,6 +137,35 @@ public class Contracts {
 
     }
 
+    /*public void readCSV(BufferedReader reader){
+        String line = null, type;
+        Scanner scanner = null;
+        int index = 0;
+        while ((line = reader.readLine()) != null) {
 
+        }
+
+        while ((line = reader.readLine()) != null) {
+            BaseContra = new Employee();
+            scanner = new Scanner(line);
+            scanner.useDelimiter(",");
+            while (scanner.hasNext()) {
+                String data = scanner.next();
+                if (index == 0)
+                    emp.setId(Integer.parseInt(data));
+                else if (index == 1)
+                    emp.setName(data);
+                else if (index == 2)
+                    emp.setRole(data);
+                else if (index == 3)
+                    emp.setSalary(data);
+                else
+                    System.out.println("Некорректные данные::" + data);
+                index++;
+            }
+            index = 0;
+            empList.add(emp);
+        }
+    }*/
 
 }

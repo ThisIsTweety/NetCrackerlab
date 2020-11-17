@@ -19,16 +19,33 @@
         <item name="GROUP_NODE:netcracker" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:netcracker" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:netcracker/lab1" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43f0eccd-32db-408d-9a02-c11341d45c8a" name="Default Changelist" comment="add Selection sort and find">
+    <list default="true" id="43f0eccd-32db-408d-9a02-c11341d45c8a" name="Default Changelist" comment="add unit tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/BumbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/ISorter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/Contracts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/Contracts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/ContractsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ContractsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/BaseContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/BaseContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/InternetContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/InternetContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dao/Contracts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/Contracts.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dao/ContractsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/ContractsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/BaseContract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/BaseContract.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/InternetContract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/InternetContract.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +70,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -102,7 +120,7 @@
       <recent name="F:\programs\Progs\netcracker lab\.idea" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContractsTest.findPredicate">
+  <component name="RunManager" selected="JUnit.ContractsTest.selectionSort">
     <configuration name="netcracker" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="netcracker lab" />
@@ -205,10 +223,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ContractsTest.findPredicate" />
         <item itemvalue="JUnit.ContractsTest.selectionSort" />
         <item itemvalue="JUnit.ContractsTest.bumbleSort" />
         <item itemvalue="JUnit.ContractsTest.delete" />
+        <item itemvalue="JUnit.ContractsTest.findPredicate" />
         <item itemvalue="JUnit.ContractsTest.find" />
       </list>
     </recent_temporary>
@@ -234,7 +252,7 @@
       <workItem from="1604670793158" duration="28796000" />
       <workItem from="1605196477952" duration="1427000" />
       <workItem from="1605199087856" duration="1435000" />
-      <workItem from="1605373153855" duration="2131000" />
+      <workItem from="1605373153855" duration="17055000" />
     </task>
     <task id="LOCAL-00001" summary="add class">
       <created>1603633544153</created>
@@ -320,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605116369302</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add unit tests">
+      <created>1605611090766</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1605611090766</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +356,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="netcracker/lab1" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -349,7 +386,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="add Comparator and bumble sort" />
     <MESSAGE value="add Selection sort and find" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Selection sort and find" />
+    <MESSAGE value="add unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add unit tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="747" y="275" key="#ContractsTest" timestamp="1604164960615">
@@ -361,18 +399,19 @@
     </state>
     <state x="626" y="142" key="#Intentions/0.0.1536.824@0.0.1536.824" timestamp="1605116255186" />
     <state x="783" y="266" width="816" height="774" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1604160475519" />
-    <state x="471" y="177" key="#Project_Structure" timestamp="1604161187206">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="377" y="0" key="#Project_Structure" timestamp="1605615150828">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="377" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1605615150828" />
     <state x="471" y="177" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1604161187206" />
     <state x="522" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604164538799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="522" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604164538799" />
-    <state x="721" y="227" key="#com.intellij.ide.util.MemberChooser" timestamp="1605111745114">
+    <state x="721" y="227" key="#com.intellij.ide.util.MemberChooser" timestamp="1605647857334">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="721" y="227" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605111745114" />
+    <state x="721" y="227" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605647857334" />
     <state x="1530" y="311" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604067206783" />
     <state x="797" y="289" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603905757243">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -390,25 +429,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604160666896" />
-    <state width="1074" height="195" key="GridCell.Tab.0.bottom" timestamp="1605610687474">
+    <state width="1074" height="195" key="GridCell.Tab.0.bottom" timestamp="1605650217420">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1074" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605610687474" />
+    <state width="1074" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605650217420" />
     <state width="1245" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604329407208" />
-    <state width="1074" height="195" key="GridCell.Tab.0.center" timestamp="1605610687473">
+    <state width="1074" height="195" key="GridCell.Tab.0.center" timestamp="1605650217420">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1074" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605610687473" />
+    <state width="1074" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605650217420" />
     <state width="1245" height="241" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604329407208" />
-    <state width="1074" height="195" key="GridCell.Tab.0.left" timestamp="1605610687473">
+    <state width="1074" height="195" key="GridCell.Tab.0.left" timestamp="1605650217420">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1074" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605610687473" />
+    <state width="1074" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605650217420" />
     <state width="1245" height="241" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604329407207" />
-    <state width="1074" height="195" key="GridCell.Tab.0.right" timestamp="1605610687474">
+    <state width="1074" height="195" key="GridCell.Tab.0.right" timestamp="1605650217420">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1074" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605610687474" />
+    <state width="1074" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605650217420" />
     <state width="1245" height="241" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604329407208" />
     <state width="1245" height="274" key="GridCell.Tab.1.bottom" timestamp="1604249589308">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -426,6 +465,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1245" height="274" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604249589308" />
+    <state x="133" y="67" key="Maven.ArtifactSearchDialog" timestamp="1605619588006">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="133" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1605619588006" />
     <state x="580" y="90" key="SettingsEditor" timestamp="1604069532016">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -446,6 +489,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="614" y="321" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604161329519" />
+    <state x="384" y="125" key="git4idea.branch.GitSmartOperationDialog" timestamp="1605611318485">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="384" y="125" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.824@0.0.1536.824" timestamp="1605611318485" />
     <state x="1019" y="258" key="run.anything.popup" timestamp="1604075252972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

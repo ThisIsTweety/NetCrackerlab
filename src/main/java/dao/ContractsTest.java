@@ -59,10 +59,11 @@ public class ContractsTest {
         expected[0] = a;
         expected[1] = a1;
 
+        BaseContractComparator.CompId compId = new BaseContractComparator.CompId();
         Contracts contr = Contracts.getInstance();
         contr.addContract(a1);
         contr.addContract(a);
-        contr.bumbleSort();
+        contr.bumbleSort(compId );
 
         Assert.assertArrayEquals(expected,contr.giveContracts());
     }
@@ -73,10 +74,11 @@ public class ContractsTest {
         expected[0] = a;
         expected[1] = a1;
 
+        BaseContractComparator.CompId compId = new BaseContractComparator.CompId();
         Contracts contr = Contracts.getInstance();
         contr.addContract(a1);
         contr.addContract(a);
-        contr.selectionSort();
+        contr.selectionSort(compId);
 
         Assert.assertArrayEquals(expected,contr.giveContracts());
     }

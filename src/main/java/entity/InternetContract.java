@@ -22,6 +22,7 @@ public class InternetContract extends BaseContract {
         super(id, number, start, end, client);
         this.maxSpeed = maxSpeed;
     }
+    public InternetContract(){}
 
     public int getMaxSpeed() {
         return maxSpeed;
