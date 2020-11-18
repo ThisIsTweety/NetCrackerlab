@@ -124,12 +124,13 @@ public class Contracts {
      * @param predicate предикат
      * @return список объектов
      */
-    public  BaseContract[] findPredicate(Predicate<BaseContract> predicate) {
-        BaseContract[] contr = new BaseContract[10];
+    public  BaseContract findPredicate(Predicate<BaseContract> predicate) {
+        BaseContract contr = null;
         for (BaseContract contract : contracts) {
             if (contract != null) {
                 if (predicate.test(contract)) {
-                    addContract(contract, contr);
+                    contr = contract;
+                    return contr;
                 }
             }
         }

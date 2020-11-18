@@ -85,15 +85,14 @@ public class ContractsTest {
 
     @Test
     public void findPredicate() {
-        BaseContract[] expected = new BaseContract[10];
-        expected[0] = a;
+
 
         Contracts contr = Contracts.getInstance();
         contr.addContract(a1);
         contr.addContract(a);
         Predicate<BaseContract> pr = contract -> contract.getNumber() == 1;
-        BaseContract[] actual = contr.findPredicate(pr);
+        BaseContract actual = contr.findPredicate(pr);
 
-        Assert.assertArrayEquals(expected,actual);
+        Assert.assertEquals(a,actual);
     }
 }
