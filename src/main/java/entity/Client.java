@@ -31,6 +31,8 @@ public class Client {
         this.DOB = DOB;
     }
 
+    public Client() { }
+
     /**
      * get и set параметров.
      */

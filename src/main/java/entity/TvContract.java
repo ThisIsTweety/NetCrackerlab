@@ -40,6 +40,8 @@ public class TvContract extends BaseContract {
         return channels;
     }
 
+    public TvContract() {}
+
     /**
      * гетеры и сетеры
      */

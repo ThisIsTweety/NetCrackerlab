@@ -23,24 +23,13 @@ public class Contracts {
     ISorter sorter;
 
 
-    /**
-     * Возвращает единственный объект
-     * @return instance
-     */
-    public static Contracts getInstance(){
-        if(instance == null){
-            instance = new Contracts();
-        }
-        return instance;
-    }
-
 
 
     /**
      * Добавляет в массив новый контракт
      * @param contract входящий парметр контракт.
      */
-    void addContract(BaseContract contract, BaseContract[] otherContracts){
+    private void addContract(BaseContract contract, BaseContract[] otherContracts){
         for(int i = 0; i < otherContracts.length; i++) {
             if (i == otherContracts.length - 1 ){
                 otherContracts[i] = contract;

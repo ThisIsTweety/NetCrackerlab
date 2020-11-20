@@ -26,6 +26,8 @@ public class MobileContract extends BaseContract {
         this.gb = gb;
     }
 
+    public MobileContract(){}
+
     /**
      * гетеры и сетеры.
      */

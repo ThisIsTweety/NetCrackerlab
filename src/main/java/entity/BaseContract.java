@@ -10,7 +10,7 @@ import java.util.Calendar;
 public class BaseContract {
     int id, number;
     LocalDate start, end;
-    public Client client;
+    Client client;
 
     /**
      * конструктор с параметрами:
@@ -28,6 +28,14 @@ public class BaseContract {
         this.client = client;
     }
     public BaseContract(){}
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
 
     @Override
     public String toString() {

@@ -20,7 +20,7 @@ public class ContractsTest {
         BaseContract[] expected = new BaseContract[10];
         expected[0] = a;
 
-        Contracts contr = Contracts.getInstance();
+        Contracts contr = new Contracts();
         contr.addContract(a);
 
         Assert.assertArrayEquals(expected,contr.giveContracts());
@@ -32,7 +32,7 @@ public class ContractsTest {
         expected[0] = a;
         expected[0] = null;
 
-        Contracts contr = Contracts.getInstance();
+        Contracts contr = new Contracts();
         contr.addContract(a);
         contr.delete(1);
 
@@ -45,7 +45,7 @@ public class ContractsTest {
         b[0] = a;
         BaseContract expected = b[0];
 
-        Contracts contr = Contracts.getInstance();
+        Contracts contr = new Contracts();;
         contr.addContract(a);
         BaseContract actual = contr.find(1);
 
@@ -60,7 +60,7 @@ public class ContractsTest {
         expected[1] = a1;
 
         BaseContractComparator.CompId compId = new BaseContractComparator.CompId();
-        Contracts contr = Contracts.getInstance();
+        Contracts contr = new Contracts();
         contr.addContract(a1);
         contr.addContract(a);
         contr.bumbleSort(compId );
@@ -75,7 +75,7 @@ public class ContractsTest {
         expected[1] = a1;
 
         BaseContractComparator.CompId compId = new BaseContractComparator.CompId();
-        Contracts contr = Contracts.getInstance();
+        Contracts contr = new Contracts();
         contr.addContract(a1);
         contr.addContract(a);
         contr.selectionSort(compId);
@@ -88,7 +88,7 @@ public class ContractsTest {
         BaseContract[] expected = new BaseContract[10];
         expected[0] = a;
 
-        Contracts contr = Contracts.getInstance();
+        Contracts contr = new Contracts();
         contr.addContract(a1);
         contr.addContract(a);
         Predicate<BaseContract> pr = contract -> contract.getNumber() == 1;
