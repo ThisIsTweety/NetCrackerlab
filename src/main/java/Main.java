@@ -35,8 +35,7 @@ public class Main {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        assert reader != null;
-        loader.readCSV(reader,contr);
+        contr.ReadCSVWithScanner(reader);
        /* Predicate<BaseContract> pr = new Predicate<BaseContract>() {
             @Override
             public boolean test(BaseContract contract) {

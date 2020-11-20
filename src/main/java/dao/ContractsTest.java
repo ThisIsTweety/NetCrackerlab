@@ -14,6 +14,7 @@ public class ContractsTest {
     Client client = new Client(1,1234,"Ivan Ivanov", "male", LocalDate.of(1986,1,30));
     BaseContract a = new InternetContract(1, LocalDate.of(2017,7,10),LocalDate.of(2020,7,10),1, client,100);
     BaseContract a1 = new InternetContract(2, LocalDate.of(2017,7,10),LocalDate.of(2020,7,10),2, client,100);
+    BaseContract a2 = new InternetContract(2, LocalDate.of(2017,7,10),LocalDate.of(2020,7,10),2, client,100);
 
     @Test
     public void addContract() {
@@ -95,5 +96,9 @@ public class ContractsTest {
         BaseContract[] actual = contr.findPredicate(pr);
 
         Assert.assertArrayEquals(expected,actual);
+    }
+    @Test
+    public void ReadCSVWithScanner(){
+
     }
 }

@@ -94,7 +94,7 @@ public class CSVLoader {
      * @param type тип
      * @return изменненый контракт
      */
-    public BaseContract typeContract(BaseContract contract,String type){
+    private BaseContract typeContract(BaseContract contract,String type){
         BaseContract baseContract ;
         if (type.equals("internet"))
         {
@@ -135,7 +135,7 @@ public class CSVLoader {
      * убирает повторяющихся клиентов по id
      * @param contracts контракты.
      */
-    public void checkClient(Contracts contracts){
+    private void checkClient(Contracts contracts){
         for(BaseContract contract : contracts.giveContracts()){
             for(BaseContract contract1 : contracts.giveContracts()){
                 if(contract != null && contract1 != null)

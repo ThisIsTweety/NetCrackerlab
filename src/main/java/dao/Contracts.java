@@ -5,6 +5,7 @@ import util.BumbleSort;
 import util.ISorter;
 import util.SelectionSort;
 
+import java.io.BufferedReader;
 import java.util.Comparator;
 import java.util.function.Predicate;
 
@@ -18,7 +19,7 @@ public class Contracts {
      * Массив контрактов
      */
 
-    private static Contracts instance;
+
     private  BaseContract[] contracts = new BaseContract[10];
     ISorter sorter;
 
@@ -126,6 +127,13 @@ public class Contracts {
 
     }
 
-
+    /**
+     * вызывает метод для чтение и записи csv файла
+     * @param reader файл для чтений
+     */
+    public void ReadCSVWithScanner(BufferedReader reader){
+        CSVLoader loader = new CSVLoader();
+        loader.readCSV(reader,this);
+    }
 
 }
