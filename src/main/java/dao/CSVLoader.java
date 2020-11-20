@@ -10,7 +10,16 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
+/**
+ * Класс позволяет загружать csv файлы в репозиторий
+ */
 public class CSVLoader {
+
+    /**
+     * метод чтения и записи данных из файла
+     * @param reader файл
+     * @param contracts репозиторий
+     */
     public void readCSV(BufferedReader reader, Contracts contracts){
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d.MM.yyyy");
         String line = null;
@@ -79,6 +88,12 @@ public class CSVLoader {
         checkClient(contracts);
     }
 
+    /**
+     * Метод определяющий тип контракта и изменяющий его
+     * @param contract контракт
+     * @param type тип
+     * @return изменненый контракт
+     */
     public BaseContract typeContract(BaseContract contract,String type){
         BaseContract baseContract ;
         if (type.equals("internet"))
@@ -116,6 +131,10 @@ public class CSVLoader {
         return baseContract;
     }
 
+    /**
+     * убирает повторяющихся клиентов по id
+     * @param contracts контракты.
+     */
     public void checkClient(Contracts contracts){
         for(BaseContract contract : contracts.giveContracts()){
             for(BaseContract contract1 : contracts.giveContracts()){
