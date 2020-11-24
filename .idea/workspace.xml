@@ -22,30 +22,31 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:netcracker" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:netcracker/lab1" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43f0eccd-32db-408d-9a02-c11341d45c8a" name="Default Changelist" comment="add unit tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/BumbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/ISorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="43f0eccd-32db-408d-9a02-c11341d45c8a" name="Default Changelist" comment="add java doc">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/CSVLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/test.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/Contracts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/Contracts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/ContractsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ContractsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entity/BaseContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/BaseContract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/InternetContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/InternetContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/MobileContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/MobileContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/TvContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/TvContract.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dao/Contracts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/Contracts.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dao/ContractsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/ContractsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/BaseContract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/BaseContract.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/InternetContract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/InternetContract.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/MobileContract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/MobileContract.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/TvContract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/TvContract.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +77,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="nextlab" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -117,26 +123,14 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\programs\Myprogs\netcracker lab\src\main\resources" />
       <recent name="F:\programs\Progs\netcracker lab\.idea" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContractsTest.selectionSort">
+  <component name="RunManager" selected="Application.netcracker">
     <configuration name="netcracker" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="netcracker lab" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -224,10 +218,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ContractsTest.selectionSort" />
-        <item itemvalue="JUnit.ContractsTest.bumbleSort" />
-        <item itemvalue="JUnit.ContractsTest.delete" />
         <item itemvalue="JUnit.ContractsTest.findPredicate" />
         <item itemvalue="JUnit.ContractsTest.find" />
+        <item itemvalue="JUnit.ContractsTest.delete" />
+        <item itemvalue="JUnit.ContractsTest.bumbleSort" />
       </list>
     </recent_temporary>
   </component>
@@ -253,6 +247,7 @@
       <workItem from="1605196477952" duration="1427000" />
       <workItem from="1605199087856" duration="1435000" />
       <workItem from="1605373153855" duration="17055000" />
+      <workItem from="1605867471343" duration="21647000" />
     </task>
     <task id="LOCAL-00001" summary="add class">
       <created>1603633544153</created>
@@ -345,7 +340,35 @@
       <option name="project" value="LOCAL" />
       <updated>1605611090766</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update find">
+      <created>1605713049268</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1605713049268</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add reader CSV">
+      <created>1605897357394</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1605897357395</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add reader CSV">
+      <created>1605897497399</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1605897497399</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add java doc">
+      <created>1605897906433</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1605897906433</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +385,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="netcracker/lab1" />
+                        <option value="netcracker/nextlab" />
                       </list>
                     </value>
                   </entry>
@@ -387,17 +410,20 @@
     <MESSAGE value="add Comparator and bumble sort" />
     <MESSAGE value="add Selection sort and find" />
     <MESSAGE value="add unit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add unit tests" />
+    <MESSAGE value="update find" />
+    <MESSAGE value="add reader CSV" />
+    <MESSAGE value="add java doc" />
+    <option name="LAST_COMMIT_MESSAGE" value="add java doc" />
   </component>
   <component name="WindowStateProjectService">
     <state x="747" y="275" key="#ContractsTest" timestamp="1604164960615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="747" y="275" key="#ContractsTest/0.0.1920.1040@0.0.1920.1040" timestamp="1604164960615" />
-    <state x="626" y="142" width="816" height="774" key="#Intentions" timestamp="1605116255186">
+    <state x="626" y="142" width="816" height="774" key="#Intentions" timestamp="1605893080926">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="626" y="142" key="#Intentions/0.0.1536.824@0.0.1536.824" timestamp="1605116255186" />
+    <state x="626" y="142" key="#Intentions/0.0.1536.824@0.0.1536.824" timestamp="1605893080926" />
     <state x="783" y="266" width="816" height="774" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1604160475519" />
     <state x="377" y="0" key="#Project_Structure" timestamp="1605615150828">
       <screen x="0" y="0" width="1536" height="824" />
@@ -408,10 +434,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="522" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604164538799" />
-    <state x="721" y="227" key="#com.intellij.ide.util.MemberChooser" timestamp="1605647857334">
+    <state x="721" y="193" key="#com.intellij.ide.util.MemberChooser" timestamp="1605892409541">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="721" y="227" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605647857334" />
+    <state x="721" y="193" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605892409541" />
     <state x="1530" y="311" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604067206783" />
     <state x="797" y="289" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603905757243">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -429,25 +455,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604160666896" />
-    <state width="1074" height="195" key="GridCell.Tab.0.bottom" timestamp="1605650217420">
+    <state width="1223" height="167" key="GridCell.Tab.0.bottom" timestamp="1605898519684">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1074" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605650217420" />
+    <state width="1223" height="167" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605898519684" />
     <state width="1245" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604329407208" />
-    <state width="1074" height="195" key="GridCell.Tab.0.center" timestamp="1605650217420">
+    <state width="1223" height="167" key="GridCell.Tab.0.center" timestamp="1605898519684">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1074" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605650217420" />
+    <state width="1223" height="167" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605898519684" />
     <state width="1245" height="241" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604329407208" />
-    <state width="1074" height="195" key="GridCell.Tab.0.left" timestamp="1605650217420">
+    <state width="1223" height="167" key="GridCell.Tab.0.left" timestamp="1605898519684">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1074" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605650217420" />
+    <state width="1223" height="167" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605898519684" />
     <state width="1245" height="241" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604329407207" />
-    <state width="1074" height="195" key="GridCell.Tab.0.right" timestamp="1605650217420">
+    <state width="1223" height="167" key="GridCell.Tab.0.right" timestamp="1605898519684">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1074" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605650217420" />
+    <state width="1223" height="167" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605898519684" />
     <state width="1245" height="241" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604329407208" />
     <state width="1245" height="274" key="GridCell.Tab.1.bottom" timestamp="1604249589308">
       <screen x="0" y="0" width="1920" height="1040" />

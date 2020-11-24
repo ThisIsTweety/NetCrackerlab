@@ -5,6 +5,7 @@ import util.BumbleSort;
 import util.ISorter;
 import util.SelectionSort;
 
+import java.io.BufferedReader;
 import java.util.Comparator;
 import java.util.function.Predicate;
 
@@ -18,21 +19,10 @@ public class Contracts {
      * Массив контрактов
      */
 
-    private static Contracts instance;
+
     private  BaseContract[] contracts = new BaseContract[10];
     ISorter sorter;
 
-
-    /**
-     * Возвращает единственный объект
-     * @return instance
-     */
-    public static Contracts getInstance(){
-        if(instance == null){
-            instance = new Contracts();
-        }
-        return instance;
-    }
 
 
 
@@ -40,7 +30,7 @@ public class Contracts {
      * Добавляет в массив новый контракт
      * @param contract входящий парметр контракт.
      */
-    void addContract(BaseContract contract, BaseContract[] otherContracts){
+    private void addContract(BaseContract contract, BaseContract[] otherContracts){
         for(int i = 0; i < otherContracts.length; i++) {
             if (i == otherContracts.length - 1 ){
                 otherContracts[i] = contract;
@@ -138,6 +128,13 @@ public class Contracts {
 
     }
 
-
+    /**
+     * вызывает метод для чтение и записи csv файла
+     * @param reader файл для чтений
+     */
+    public void ReadCSVWithScanner(BufferedReader reader){
+        CSVLoader loader = new CSVLoader();
+        loader.readCSV(reader,this);
+    }
 
 }

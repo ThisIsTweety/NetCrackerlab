@@ -14,13 +14,14 @@ public class ContractsTest {
     Client client = new Client(1,1234,"Ivan Ivanov", "male", LocalDate.of(1986,1,30));
     BaseContract a = new InternetContract(1, LocalDate.of(2017,7,10),LocalDate.of(2020,7,10),1, client,100);
     BaseContract a1 = new InternetContract(2, LocalDate.of(2017,7,10),LocalDate.of(2020,7,10),2, client,100);
+    BaseContract a2 = new InternetContract(2, LocalDate.of(2017,7,10),LocalDate.of(2020,7,10),2, client,100);
 
     @Test
     public void addContract() {
         BaseContract[] expected = new BaseContract[10];
         expected[0] = a;
 
-        Contracts contr = Contracts.getInstance();
+        Contracts contr = new Contracts();
         contr.addContract(a);
 
         Assert.assertArrayEquals(expected,contr.giveContracts());
@@ -32,7 +33,7 @@ public class ContractsTest {
         expected[0] = a;
         expected[0] = null;
 
-        Contracts contr = Contracts.getInstance();
+        Contracts contr = new Contracts();
         contr.addContract(a);
         contr.delete(1);
 
@@ -45,7 +46,7 @@ public class ContractsTest {
         b[0] = a;
         BaseContract expected = b[0];
 
-        Contracts contr = Contracts.getInstance();
+        Contracts contr = new Contracts();;
         contr.addContract(a);
         BaseContract actual = contr.find(1);
 
@@ -60,7 +61,7 @@ public class ContractsTest {
         expected[1] = a1;
 
         BaseContractComparator.CompId compId = new BaseContractComparator.CompId();
-        Contracts contr = Contracts.getInstance();
+        Contracts contr = new Contracts();
         contr.addContract(a1);
         contr.addContract(a);
         contr.bumbleSort(compId );
@@ -75,7 +76,7 @@ public class ContractsTest {
         expected[1] = a1;
 
         BaseContractComparator.CompId compId = new BaseContractComparator.CompId();
-        Contracts contr = Contracts.getInstance();
+        Contracts contr = new Contracts();
         contr.addContract(a1);
         contr.addContract(a);
         contr.selectionSort(compId);
@@ -87,12 +88,16 @@ public class ContractsTest {
     public void findPredicate() {
 
 
-        Contracts contr = Contracts.getInstance();
+        Contracts contr = new Contracts();
         contr.addContract(a1);
         contr.addContract(a);
         Predicate<BaseContract> pr = contract -> contract.getNumber() == 1;
         BaseContract actual = contr.findPredicate(pr);
 
         Assert.assertEquals(a,actual);
+    }
+    @Test
+    public void ReadCSVWithScanner(){
+
     }
 }
