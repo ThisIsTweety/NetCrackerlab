@@ -81,11 +81,11 @@ public class CSVLoader {
                     System.out.println("Некорректные данные::" + data);
                 index++;
             }
+            checkClient(contracts, baseContract);
             contracts.addContract(baseContract);
             index = 0;
-
         }
-        checkClient(contracts);
+
     }
 
     /**
@@ -135,13 +135,13 @@ public class CSVLoader {
      * убирает повторяющихся клиентов по id
      * @param contracts контракты.
      */
-    private void checkClient(Contracts contracts){
-        for(BaseContract contract : contracts.giveContracts()){
+    private void checkClient(Contracts contracts,BaseContract contract){
+
             for(BaseContract contract1 : contracts.giveContracts()){
-                if(contract != null && contract1 != null)
+                if( contract1 != null)
                   if(contract.getClient().getId() == contract1.getClient().getId())
-                     contract1.setClient(contract.getClient());
+                     contract.setClient(contract1.getClient());
             }
-        }
+
     }
 }
