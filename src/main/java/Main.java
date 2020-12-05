@@ -36,16 +36,19 @@ public class Main {
             e.printStackTrace();
         }
         contr.ReadCSVWithScanner(reader);
+
+
        /* Predicate<BaseContract> pr = new Predicate<BaseContract>() {
             @Override
             public boolean test(BaseContract contract) {
                 return contract.getNumber() == 1;
             }
         };*/
-    /*    BaseContractComparator.CompId compId = new BaseContractComparator.CompId();
-        contr.bumbleSort(compId);
+    /*
         Predicate<BaseContract> pr = contract -> contract.getNumber() == 1;
         BaseContract[] cc = contr.findPredicate(pr);*/
+
+
         for(BaseContract b1 : contr.giveContracts()){
             System.out.println(b1.toString());
         }

@@ -2,12 +2,15 @@ package dao;
 
 import entity.*;
 import org.apache.commons.beanutils.BeanUtils;
+import verification.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -20,6 +23,13 @@ public class CSVLoader {
      * @param reader файл
      * @param contracts репозиторий
      */
+    private static List<ContractVerification> validators = new ArrayList<>();
+    Message message;
+    static {
+        validators.add(new InternetVerif());
+        validators.add(new MobileVerif());
+        validators.add(new TvVerif());
+    }
     public void readCSV(BufferedReader reader, Contracts contracts){
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d.MM.yyyy");
         String line = null;
@@ -81,7 +91,10 @@ public class CSVLoader {
                     System.out.println("Некорректные данные::" + data);
                 index++;
             }
+
             checkClient(contracts, baseContract);
+            message = valid(baseContract);
+            System.out.println(message.getInfo());
             contracts.addContract(baseContract);
             index = 0;
         }
@@ -143,5 +156,15 @@ public class CSVLoader {
                      contract.setClient(contract1.getClient());
             }
 
+    }
+    private Message valid(BaseContract a){
+        Message mess;
+        for(ContractVerification c : validators){
+            if(c.checkType(a)){
+                mess = c.checkContract(a);
+                return mess;
+            }
+        }
+        return mess = null;
     }
 }
