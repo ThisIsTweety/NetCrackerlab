@@ -28,20 +28,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43f0eccd-32db-408d-9a02-c11341d45c8a" name="Default Changelist" comment="add validation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/injects/AutoInjectable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/injects/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/injects/Injector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/verification/IVerif.java" afterDir="false" />
+    <list default="true" id="43f0eccd-32db-408d-9a02-c11341d45c8a" name="Default Changelist" comment="add Injector">
+      <change afterPath="$PROJECT_DIR$/src/main/java/injects/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/CSVLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/CSVLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/verification/ContractVerification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/verification/ContractVerification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/verification/InternetVerif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/verification/InternetVerif.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/verification/MobileVerif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/verification/MobileVerif.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/verification/TvVerif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/verification/TvVerif.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/CSVLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/CSVLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/injects/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/injects/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/injects/Injector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/injects/Injector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +59,8 @@
         <option value="JUnit5 Test Class" />
         <option value="Enum" />
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -265,7 +256,7 @@
       <workItem from="1606998843008" duration="21485000" />
       <workItem from="1608815363702" duration="411000" />
       <workItem from="1609939222011" duration="7824000" />
-      <workItem from="1610031223049" duration="5081000" />
+      <workItem from="1610031223049" duration="8168000" />
     </task>
     <task id="LOCAL-00001" summary="add class">
       <created>1603633544153</created>
@@ -407,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607188254531</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add Injector">
+      <created>1610114823178</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1610114823178</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +452,8 @@
     <MESSAGE value="merge branch" />
     <MESSAGE value="update method &quot;checkClient&quot;" />
     <MESSAGE value="add validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add validation" />
+    <MESSAGE value="add Injector" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Injector" />
   </component>
   <component name="WindowStateProjectService">
     <state x="747" y="275" key="#ContractsTest" timestamp="1604164960615">
@@ -502,25 +501,25 @@
     </state>
     <state x="592" y="218" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608815768049" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604160666896" />
-    <state width="1226" height="154" key="GridCell.Tab.0.bottom" timestamp="1610033630862">
+    <state width="1226" height="154" key="GridCell.Tab.0.bottom" timestamp="1610114828559">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1226" height="154" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610033630862" />
+    <state width="1226" height="154" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610114828559" />
     <state width="1245" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604329407208" />
-    <state width="1226" height="154" key="GridCell.Tab.0.center" timestamp="1610033630861">
+    <state width="1226" height="154" key="GridCell.Tab.0.center" timestamp="1610114828558">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1226" height="154" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610033630861" />
+    <state width="1226" height="154" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610114828558" />
     <state width="1245" height="241" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604329407208" />
-    <state width="1226" height="154" key="GridCell.Tab.0.left" timestamp="1610033630861">
+    <state width="1226" height="154" key="GridCell.Tab.0.left" timestamp="1610114828557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1226" height="154" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610033630861" />
+    <state width="1226" height="154" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610114828557" />
     <state width="1245" height="241" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604329407207" />
-    <state width="1226" height="154" key="GridCell.Tab.0.right" timestamp="1610033630861">
+    <state width="1226" height="154" key="GridCell.Tab.0.right" timestamp="1610114828558">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1226" height="154" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610033630861" />
+    <state width="1226" height="154" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610114828558" />
     <state width="1245" height="241" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604329407208" />
     <state width="1245" height="274" key="GridCell.Tab.1.bottom" timestamp="1604249589308">
       <screen x="0" y="0" width="1920" height="1040" />
