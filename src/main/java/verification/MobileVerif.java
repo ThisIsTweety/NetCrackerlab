@@ -5,7 +5,7 @@ import entity.InternetContract;
 import entity.MobileContract;
 import entity.TvContract;
 
-public class MobileVerif extends ContractVerification  {
+public class MobileVerif extends ContractVerification implements IVerif  {
     public MobileContract typeContract = new MobileContract();
     Message message = new Message(Status.OK);
     public Message checkContract(TvContract contract){

@@ -5,7 +5,7 @@ import entity.InternetContract;
 
 import java.time.LocalDate;
 
-public abstract class ContractVerification {
+public abstract class ContractVerification  {
     String info, fields;
 
     Message message = new Message(Status.OK);
@@ -51,7 +51,7 @@ public abstract class ContractVerification {
             message.setFields("end \n");
         }
     }
-    abstract public boolean checkType(BaseContract a);
+
 }
 
 

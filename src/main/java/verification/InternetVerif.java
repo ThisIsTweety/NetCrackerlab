@@ -3,7 +3,7 @@ package verification;
 import entity.BaseContract;
 import entity.InternetContract;
 
-public class InternetVerif extends ContractVerification {
+public class InternetVerif extends ContractVerification implements IVerif {
 
     public BaseContract typeContract = new InternetContract();
     Message message = new Message(Status.OK);

@@ -4,7 +4,7 @@ import entity.BaseContract;
 import entity.InternetContract;
 import entity.TvContract;
 
-public class TvVerif extends ContractVerification {
+public class TvVerif extends ContractVerification implements IVerif {
     Message message = new Message(Status.OK);
     public TvContract typeContract = new TvContract();
     public Message checkContract(TvContract contract){

@@ -23,7 +23,7 @@ public class CSVLoader {
      * @param reader файл
      * @param contracts репозиторий
      */
-    private static List<ContractVerification> validators = new ArrayList<>();
+    private static List<IVerif> validators = new ArrayList<>();
     Message message;
     static {
         validators.add(new InternetVerif());
@@ -159,7 +159,7 @@ public class CSVLoader {
     }
     private Message valid(BaseContract a){
         Message mess;
-        for(ContractVerification c : validators){
+        for(IVerif c : validators){
             if(c.checkType(a)){
                 mess = c.checkContract(a);
                 return mess;
