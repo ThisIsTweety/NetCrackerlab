@@ -1,6 +1,7 @@
 package dao;
 
 import entity.*;
+import injects.AutoInjectable;
 import org.apache.commons.beanutils.BeanUtils;
 import verification.*;
 
@@ -23,13 +24,17 @@ public class CSVLoader {
      * @param reader файл
      * @param contracts репозиторий
      */
+    @AutoInjectable
     private static List<IVerif> validators = new ArrayList<>();
+
+    IVerif verif;
+
     Message message;
-    static {
+   /* static {
         validators.add(new InternetVerif());
         validators.add(new MobileVerif());
         validators.add(new TvVerif());
-    }
+    }*/
     public void readCSV(BufferedReader reader, Contracts contracts){
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d.MM.yyyy");
         String line = null;

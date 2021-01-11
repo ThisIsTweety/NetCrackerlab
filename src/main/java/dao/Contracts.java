@@ -1,6 +1,7 @@
 package dao;
 
 import entity.BaseContract;
+import injects.AutoInjectable;
 import util.BumbleSort;
 import util.ISorter;
 import util.SelectionSort;
@@ -21,6 +22,7 @@ public class Contracts {
 
 
     private  BaseContract[] contracts = new BaseContract[10];
+    @AutoInjectable
     ISorter sorter;
 
 

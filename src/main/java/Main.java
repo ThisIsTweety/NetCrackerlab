@@ -5,6 +5,7 @@ import entity.BaseContract;
 import entity.Client;
 import entity.InternetContract;
 import entity.TvContract;
+import injects.Injector;
 import org.apache.commons.beanutils.BeanUtils;
 
 import java.io.BufferedReader;
@@ -29,15 +30,30 @@ public class Main {
         Contracts contr = new Contracts();
         CSVLoader loader = new CSVLoader();
         BufferedReader reader = null;
+        Injector injector = new Injector();
+
+        try {
+            injector.inject(loader.getClass());
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+
         try {
             reader = new BufferedReader(new FileReader(
-                    "D:\\programs\\Myprogs\\netcracker lab\\src\\main\\resources\\test.csv"));
+                    "F:\\programs\\Progs\\netcracker lab\\src\\main\\resources\\test.csv"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
         contr.ReadCSVWithScanner(reader);
-
-
+        for(BaseContract b1 : contr.giveContracts()){
+            System.out.println(b1.toString());
+        }
        /* Predicate<BaseContract> pr = new Predicate<BaseContract>() {
             @Override
             public boolean test(BaseContract contract) {
@@ -49,9 +65,10 @@ public class Main {
         BaseContract[] cc = contr.findPredicate(pr);*/
 
 
-        for(BaseContract b1 : contr.giveContracts()){
+        /*for(BaseContract b1 : contr.giveContracts()){
             System.out.println(b1.toString());
-        }
+        }*/
+
 
     }
 }
