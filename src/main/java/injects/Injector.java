@@ -14,13 +14,17 @@ import java.util.Set;
 public class Injector {
     private Config config = new Config();
     private Reflections scanner;
-    public void inject(Class object) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
+    public void inject(Class object) throws MyException {
         for (Field f : object.getDeclaredFields()) {
             if (f.isAnnotationPresent(AutoInjectable.class)) {
                 if (f.getType().isInterface()) {
                     if (!Collection.class.isAssignableFrom(f.getType())) {
                         f.setAccessible(true);
-                        f.set(object, config.getImpClass(f.getType()));
+                        try {
+                            f.set(object, config.getImpClass(f.getType()));
+                        } catch (IllegalAccessException e) {
+                            throw new MyException(e);
+                        }
                     }
                     else {
                         f.setAccessible(true);
@@ -30,7 +34,11 @@ public class Injector {
                         sType = fieldArg[0];
                         Class<?> clazz = (Class<?>) sType;
                         System.out.println(clazz);
-                        f.set(object, config.getImpClasses(clazz));
+                        try {
+                            f.set(object, config.getImpClasses(clazz));
+                        } catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException | InstantiationException e) {
+                            throw new MyException(e);
+                        }
                     }
                 }
                 else
