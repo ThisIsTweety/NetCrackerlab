@@ -46,7 +46,7 @@ public class Main {
 
         try {
             reader = new BufferedReader(new FileReader(
-                    "F:\\programs\\Progs\\netcracker lab\\src\\main\\resources\\test.csv"));
+                    "D:\\programs\\Myprogs\\netcracker lab\\src\\main\\resources\\test.csv"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

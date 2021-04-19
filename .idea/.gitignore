@@ -1,3 +1,5 @@
 # Default ignored files
 .idea/*
 /master/target/*
+# Datasource local storage ignored files
+/dataSources.local.xml
