@@ -25,7 +25,7 @@ public class ContractsTest {
         contr.addContract(a);
 
         Assert.assertArrayEquals(expected,contr.giveContracts());
-    }
+}
 
     @Test
     public void delete() {

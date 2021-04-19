@@ -1,7 +1,7 @@
 package injects;
 
 import org.reflections.Reflections;
-import sun.reflect.Reflection;
+
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -14,7 +14,7 @@ import java.util.Set;
 public class Injector {
     private Config config = new Config();
     private Reflections scanner;
-    public void inject(Class object) throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
+    public void inject(Class object) throws Exception {
         for (Field f : object.getDeclaredFields()) {
             if (f.isAnnotationPresent(AutoInjectable.class)) {
                 if (f.getType().isInterface()) {
