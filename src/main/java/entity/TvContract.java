@@ -18,7 +18,7 @@ public class TvContract extends BaseContract {
      * @param client
      * @param tariff
      */
-    public TvContract(int id, int number, LocalDate start, LocalDate end, Client client, String tariff) {
+    public TvContract(int id,  LocalDate start, LocalDate end,int number, Client client, String tariff) {
         super(id, number, start, end, client);
         this.tariff = tariff;
 
@@ -51,5 +51,12 @@ public class TvContract extends BaseContract {
 
     public void setTariff(String tariff) {
         this.tariff = tariff;
+    }
+
+    @Override
+    public String toString() {
+        return "TvContract{" +
+                "tariff='" + tariff + '\'' +
+                '}';
     }
 }

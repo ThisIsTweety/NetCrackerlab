@@ -1,6 +1,9 @@
 package dao;
 
 import entity.BaseContract;
+import entity.InternetContract;
+import entity.MobileContract;
+import entity.TvContract;
 import injects.AutoInjectable;
 import util.BumbleSort;
 import util.ISorter;
@@ -134,9 +137,32 @@ public class Contracts {
      * вызывает метод для чтение и записи csv файла
      * @param reader файл для чтений
      */
-    public void ReadCSVWithScanner(BufferedReader reader){
+    public void readCSVWithScanner(BufferedReader reader){
         CSVLoader loader = new CSVLoader();
         loader.readCSV(reader,this);
     }
 
+    /**
+     * загрузка всех контрактов из базы
+     */
+    public void getDBContracts(){
+        DatabaseHandler databaseHandler = new DatabaseHandler();
+        databaseHandler.getInternetContracts(this);
+        databaseHandler.getMobileContracts(this);
+        databaseHandler.getTVContracts(this);
+    }
+    public void setDBContracts(){
+        DatabaseHandler databaseHandler = new DatabaseHandler();
+        for(BaseContract contr : contracts){
+            if(contr instanceof InternetContract){
+                databaseHandler.signUpInternetContract((InternetContract) contr);
+            }
+            if(contr instanceof MobileContract) {
+                databaseHandler.signUpMobileContract((MobileContract) contr);
+            }if(contr instanceof TvContract){
+                databaseHandler.signUpTvContract((TvContract) contr);
+            }
+
+        }
+    }
 }

@@ -76,6 +76,17 @@ public class Client {
         this.DOB = DOB;
     }
 
+    @Override
+    public String toString() {
+        return "Client{" +
+                "id=" + id +
+                ", passport=" + passport +
+                ", FullName='" + FullName + '\'' +
+                ", gender='" + gender + '\'' +
+                ", DOB=" + DOB +
+                '}';
+    }
+
     /**
      * метод вычисляющий возраст клиента
      * @param birthDate входящий параметр дата рождения

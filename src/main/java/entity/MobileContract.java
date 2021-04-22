@@ -54,4 +54,13 @@ public class MobileContract extends BaseContract {
     public void setGb(int gb) {
         this.gb = gb;
     }
+
+    @Override
+    public String toString() {
+        return "MobileContract{" +
+                "minutes=" + minutes +
+                ", sms=" + sms +
+                ", gb=" + gb +
+                '}';
+    }
 }
