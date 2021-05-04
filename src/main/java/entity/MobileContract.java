@@ -1,10 +1,14 @@
 package entity;
 
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 import java.time.LocalDate;
 
 /**
  * наследник класса BaseContract
  */
+@XmlType(name = "mobileContract")
+@XmlRootElement
 public class MobileContract extends BaseContract {
     int minutes, sms, gb;
 

@@ -1,11 +1,15 @@
 package entity;
 
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 import java.time.LocalDate;
 import java.util.Calendar;
 
 /**
  * наследник класса BaseContract
  */
+@XmlType(name = "internetContract")
+@XmlRootElement
 public class InternetContract extends BaseContract {
     int maxSpeed;
 

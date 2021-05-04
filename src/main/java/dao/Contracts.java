@@ -9,6 +9,9 @@ import util.BumbleSort;
 import util.ISorter;
 import util.SelectionSort;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.io.BufferedReader;
 import java.util.Comparator;
 import java.util.function.Predicate;
@@ -16,6 +19,7 @@ import java.util.function.Predicate;
 /**
  * класс репозиторий, хранящий все контракты.
  */
+@XmlRootElement(namespace = "com.nc")
 public class Contracts {
     /**
      * свойства:
@@ -23,7 +27,8 @@ public class Contracts {
      * Массив контрактов
      */
 
-
+    @XmlElementWrapper(name = "contractList")
+    @XmlElement(name = "contract")
     private  BaseContract[] contracts = new BaseContract[10];
     @AutoInjectable
     ISorter sorter;

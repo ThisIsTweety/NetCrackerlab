@@ -1,21 +1,11 @@
-import dao.BaseContractComparator;
-import dao.CSVLoader;
-import dao.Contracts;
-import dao.DatabaseHandler;
+import dao.*;
 import entity.BaseContract;
 import entity.Client;
 import entity.InternetContract;
 import entity.TvContract;
-import injects.Injector;
-import injects.MyException;
-import org.apache.commons.beanutils.BeanUtils;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.lang.reflect.InvocationTargetException;
+import java.io.File;
 import java.time.LocalDate;
-import java.util.function.Predicate;
 
 /**
  *  Main класс, являющей точкой старта
@@ -60,12 +50,18 @@ public class Main {
         Predicate<BaseContract> pr = contract -> contract.getNumber() == 1;
         BaseContract[] cc = contr.findPredicate(pr);*/
 
-        contr.getDBContracts();
+    /*    contr.getDBContracts();
         for(BaseContract b1 : contr.giveContracts()){
             System.out.println(b1.toString());
-        }
-
-
+        }*/
+        contr.addContract(a);
+        contr.addContract(d);
+        File file = new File("file.xml");
+        JAXBConverter jaxbConverter = new JAXBConverter();
+        /*jaxbConverter.tvConvert((TvContract) d, file);
+        jaxbConverter.internetConvert((InternetContract) a, file);*/
+        jaxbConverter.allConvert(contr,file);
+        jaxbConverter.allUnConvert(file);
 
 
     }

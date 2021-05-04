@@ -1,12 +1,19 @@
 package entity;
 
 import sun.util.resources.LocaleData;
+import util.LocalDateAdapter;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.time.LocalDate;
 import java.util.Calendar;
 /**
  * Класс родитель контрактов со свойствами <b>id</b>, <b>number</b>, <b>start</b>, <b>end</b> и объектом класса "клиент" <b>client</b>.
  */
+@XmlType(name = "baseContract")
+@XmlRootElement
 public class BaseContract {
     int id, number;
     LocalDate start, end;
@@ -62,15 +69,15 @@ public class BaseContract {
     public int getId() {
         return id;
     }
-
+    @XmlJavaTypeAdapter(LocalDateAdapter.class)
     public void setStart(LocalDate start) {
         this.start = start;
     }
-
+    @XmlJavaTypeAdapter(LocalDateAdapter.class)
     public void setEnd(LocalDate end) {
         this.end = end;
     }
-
+    @XmlAttribute
     public void setId(int id) {
         this.id = id;
     }

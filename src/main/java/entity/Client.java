@@ -1,7 +1,12 @@
 package entity;
 
 import sun.util.resources.LocaleData;
+import util.LocalDateAdapter;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.Calendar;
@@ -9,10 +14,13 @@ import java.util.Calendar;
 /**
  * сущность "Клиент"
  */
+@XmlType(name = "client")
+@XmlRootElement
 public class Client {
 
     int id, passport;
     String FullName, gender;
+
     LocalDate DOB;
 
     /**
@@ -39,7 +47,7 @@ public class Client {
     public int getId() {
         return id;
     }
-
+    @XmlAttribute
     public void setId(int id) {
         this.id = id;
     }
@@ -71,7 +79,7 @@ public class Client {
     public LocalDate getDOB() {
         return DOB;
     }
-
+    @XmlJavaTypeAdapter(LocalDateAdapter.class)
     public void setDOB(LocalDate DOB) {
         this.DOB = DOB;
     }

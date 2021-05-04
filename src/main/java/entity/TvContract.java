@@ -1,10 +1,14 @@
 package entity;
 
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 import java.time.LocalDate;
 
 /**
  * Наследник класса BaseContract.
  */
+@XmlType(name = "tvContract")
+@XmlRootElement
 public class TvContract extends BaseContract {
     int channels;
     String tariff;
